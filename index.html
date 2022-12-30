@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicewebsiteweek2</title>
+    <link href="./index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <p>This is revision and practise of flexbox</p>
+    <!--This one will be a box with 3 columns-->
+    <div id="column" class="flex">
+        <div class="flex_item">
+          The flex-direction is set to column.
+        </div>
+        <div class="flex_item">
+          So the individual items stack from top to bottom.
+        </div>
+        <div class="flex_item">
+          What's slightly confusing is that the outcome looks like 3 rows! But it's also 1 column.
+        </div>
+      </div>
+<br><!--I put the break in to see what's happening more clearly-->
+    <!--This one will be a box with 3 rows-->
+        <div id="row" class="flex">
+        <div class="flex_item">
+          The flex-direction is set to row.
+        </div>
+        <div class="flex_item">
+          So the individual items spread from left to right.
+        </div>
+        <div class="flex_item">
+          You can see how this is clearly 1 row.
+        </div>
+      </div>
+<br><!--I put the break in to see what's happening more clearly-->
+<!--This section is about aligning things within the flexbox. Think flexbox froggy!-->
+      <section class="alignItems flexContainer">
+        <div class="flexItem">
+          There are 3 boxes here, all containing text. This exercise is about positioning of the boxes.
+        </div>
+        <div class="flexItem">
+          It is NOT about positioning of the text within the boxes!
+        </div>
+        <div class="flexItem">
+          The class of alignItems was targeted, then all 3 boxes were set to
+          align-items: center so that they appear in the middle
+          of the big blue rectangular box's y axis.
+        </div>
+      </section>
+<br><!--I put the break in to see what's happening more clearly-->
+      <section class="justifyContent flexContainer">
+        <div class="flexItem">
+          This is only slightly different, it's about the position of the boxes on the x axis.
+        </div>
+        <div class="flexItem">
+          I set it to justify-content: flex-end.
+        </div>
+        <div class="flexItem">
+          This placed the 3 boxes on the right of the container.
+        </div>
+      </section>
+      <section class="perfectlyCentered flexContainer">
+        <div class="flexItem">
+          To be perfectly centred, you have to set both align-items AND justify-content to center.
+        </div>
+        </section>
+</body>
+</html>

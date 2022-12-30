@@ -1,0 +1,55 @@
+.flex_item {
+    padding:10px;
+    margin: 10px;
+    background-color: orange;
+    color: white;
+  }
+  /*You have given both flexboxes the class of "flex". To make them
+  behave like a flexbox, you then need to target them and ask them to
+  display: flex; You are targeting the container, 
+  not the items within the container.*/
+  .flex {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+  }
+  #column {
+    background-color: #E6F5FF;
+    flex-direction: column;
+  }
+  #row {
+    background-color: #FFF7DE;
+    flex-direction: row;
+  }
+
+  /*What follows is from Lesson 1 activity 2*/
+  .flexItem {
+    background-color: lightyellow;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+  }
+  .flexContainer {
+    display: flex;
+    height: 400px;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+  }
+  /*The thing with the class of alignItems is the container.
+  So this instruction is telling the container - the big, light blue, rectangular box - 
+  how to align, up or down, the smaller boxes within it. display:flex 
+  was already set above in the class of flexContainer*/
+  .alignItems {
+    align-items: center;
+  }
+    .justifyContent {
+    justify-content: flex-end;
+  }
+  /* To be perfectly centred, you need to center both 
+  align-items AND justify-content*/
+  .perfectlyCentered {
+    justify-content: center;
+    align-items: center;
+  }
