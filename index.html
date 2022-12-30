@@ -59,7 +59,7 @@
           I set it to justify-content: flex-end.
         </div>
         <div class="flexItem">
-          This placed the 3 boxes on the right of the container.
+          This places the 3 boxes on the right of the container.
         </div>
       </section>
       <section class="perfectlyCentered flexContainer">
@@ -67,5 +67,30 @@
           To be perfectly centred, you have to set both align-items AND justify-content to center.
         </div>
         </section>
+<br><!--I put the break in to see what's happening more clearly-->
+        <section>
+          Moving onto Jake's Eatery, final activity for Tuesday.
+          The logo at the top was from an image, and used as background image.
+          Interestingly, they applied background-repeat: no-repeat;
+          without this, it defaults to repeating.
+          <br>
+          <br>
+          To get the pictures of food to go underneath each other, that
+          section had to be treated as 1 column with 3 rows (I think!).
+          Then the 'parent' had to be given display: flex AND flex-direction: column.
+        </section>
+<br>
+I stole the footer html and CSS from Jake's Eatery for reference.
+When doing this alone, I had trouble with the three links, for Facebook, Twitter and Instagram.
+They are in the middle but spaced evenly, and I was confused about using space-evenly, space-around, etc.
+The actual solution was to justify-content: center AND to give each item a little padding.
+The justify-content had to be applied to the parent, which was the footer.
+The padding was applied to the individual items.
+The individual items also had text-decoration: none applied to stop them being underlined.
+        <div class="footer">
+          <a href="#" class="fb">Facebook</a>
+          <a href="#" class="tw">Twitter</a>
+          <a href="#" class="ig">Instagram</a>
+      </div>
 </body>
 </html>
