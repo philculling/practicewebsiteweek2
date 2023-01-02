@@ -105,9 +105,46 @@ Also, the photo sections (bookcases, bedroom, etc.) were themselves grids, so
 this was an exanple of nested grids. They also had display: grid and align-content: end, 
 which is what made the captions all go to the bottom of the photos. The README for this exercise
 (week 2, day 2, activity 2) contains links to guidance about using grids.
-<br>
-<br>
+<hr>
 Week 2, day 2, activity 3: their solved version doesn't quite work for media queries.
 It may be worth reviewing this later when you have more experience.
+<hr>
+Week 2, day 3, activity 4. We can across the hover feature in CSS for links. This 
+makes them do various things you ask. e.g. when the mouse hovers over the link,
+it can change from a simple arrow to a picture of a hand that suggests
+you're about to be taken to a different webpage; you can also change what 
+the word underneath looks like, e.g. change colour, make it go bold, etc.
+The syntax is not easy to remember though. This is what they wrote to make
+the links hover and change colour. The hover doesn't appear to be a separate command 
+in itself. They used, to target the links in the nav:
+nav a:hover {[then the instructions in here, e.g. color: white]}
+<hr>
+Week 2, day 3, activity 6 was about root variables (though they might not actually
+be called this!).
+<br>
+It allows you to set the styling for all types of something. e.g. If you want
+all whites to be a specific shade of white, all dark blues to be a specific
+dark blue, all tans to be a specific tan, etc. It can apply to things other than 
+colours too. In the example below (point 5), it sets all border-radii to be 50px.
+<br>The point behind this is to save you retyping throughout the document, 
+you set it up at the start of the CSS.
+<br> So there will be various points of syntax to remember.
+<ol>
+  <li>At the start, write :root {see point 2}</li>
+  <li>Then work through each characteristic. For example</li>
+  <li>If you want all whites to be a particular shade, use [--white: value]</li>
+  <li>If you want all border radii to be 50px, it will look like this</li>
+  <li>--border-radius: 50px;</li>
+  <li>Then the body of the CSS has to refer back to this root, like so:</li>
+  <li>color: var(--white);</li>
+</ol>
+<p>This is their full example
+  <br>:root {
+  <br>--white: #fff;
+  <br>--dark-blue: #13293d;
+  <br>--tan: #d8a47f;
+  <br>/* You can use it with any value that is repeated throughout the sheet */
+  <br>--border-radius: 50px;
+  <br>}</p>
 </body>
 </html>
